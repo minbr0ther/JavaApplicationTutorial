@@ -2,10 +2,13 @@ package se.hs.ac.controller;
 
 import se.hs.ac.game.LottoGame;
 import se.hs.ac.view.LottoView;
+import se.hs.ac.vo.ExampleLotto;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LottoController {
 
@@ -22,10 +25,18 @@ public class LottoController {
 
             lottoView.showQuestion();
             int num = Integer.parseInt(br.readLine());
-            lottoGame.generateExampleLotto(num);
-            lottoGame.generateWinningLotto();
-            lottoGame.generateWinningList();
 
+            LottoView.showExampleLotto((ArrayList<ExampleLotto>) lottoGame.generateExampleLotto(num));
+
+            LottoView.showWinningLotto(lottoGame.generateWinningLotto());
+
+            List<ExampleLotto> exampleLotto = lottoGame.generateWinningList();
+
+            for (ExampleLotto example : exampleLotto) {
+                if (example.getRank() > 0) {
+                    LottoView.showLottoRank(example, example.getRank());
+                }
+            }
         } catch (IOException e) {
             lottoView.showError();
         }

@@ -9,12 +9,14 @@ public class ExampleLotto {
     private int id;
     private Set<Integer> basicNumbers;
     private int matchCount;
+    private int rank;
 
     public ExampleLotto(int id, boolean randomOrExample) {
         this.id = id;
         basicNumbers = new TreeSet<Integer>();
         setBasicNumbers(randomOrExample);
         matchCount = 0;
+        rank = 0;
     }
 
     public Set<Integer> getBasicNumbers() {
@@ -23,14 +25,13 @@ public class ExampleLotto {
 
     public void setBasicNumbers(boolean randomOrExample) {
         //true: Random case, false: example case
-        if(randomOrExample) {
+        if (randomOrExample) {
             for (int i = 0; basicNumbers.size() < 6; i++) {
                 basicNumbers.add((int) (Math.random() * 42) + 1);
             }
-        }
-        else {
+        } else {
             basicNumbers.clear();
-            basicNumbers = new TreeSet<>(Arrays.asList(1,2,5,6,8,9));
+            basicNumbers = new TreeSet<>(Arrays.asList(1, 2, 5, 6, 8, 9));
         }
     }
 
@@ -48,5 +49,13 @@ public class ExampleLotto {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
     }
 }
