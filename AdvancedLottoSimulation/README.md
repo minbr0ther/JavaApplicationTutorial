@@ -30,14 +30,12 @@
 
 ### **>> 초기 모델 설계**
 
- ![image-20210110130248316](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110130248316.png)
+<img width="834" alt="image-20210110130248316" src="https://user-images.githubusercontent.com/24728385/104114789-bd638280-534b-11eb-8fe0-50b02302dcb1.png">
 
 * ExampleLotto(시뮬레이션 될 예시 번호)는 큰 틀이 ArrayList이다
   * `id` :초기 설계 때 없었는데, ArrayList내부의 Object의 index를 구하는 방법을 찾지못해 부여하게 됐다.
   * `Set<Integer> basicNumbers` : TreeSet의 장점인 ''번호 중복 자동삭제''와 ''오름차순 정렬''로 번호를 삽입한다.
   * `private int matchCount` : 당첨번호와 비교하여 몇개나 맞았는지 카운트 한다.
-
-
 
 * WinningLotto(당첨 번호)
   * `Set<Integer> basicNumbers` : TreeSet의 장점인 ''번호 중복 자동삭제''와 ''오름차순 정렬''로 번호를 삽입한다.
@@ -45,10 +43,10 @@
 
 ### **>> 실행화면 **
 
-![image-20210110133109608](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110133109608.png){: width="100%" height="100%"}
+![image-20210110133109608](https://user-images.githubusercontent.com/24728385/104114804-d9672400-534b-11eb-9fe7-0a812a201704.png){: width="100%" height="100%"}
 
-<img src="/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110133255724.png" alt="image-20210110133255724" style="zoom:50%;" />
+<img width="427" alt="image-20210110133255724" src="https://user-images.githubusercontent.com/24728385/104114810-e7b54000-534b-11eb-8b7f-0fd79c3cfe4b.png">
 
 ### **>> Class diagram**
 
-![image-20210110134626645](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110134626645.png)
+![image-20210110134626645](https://user-images.githubusercontent.com/24728385/104114816-f3086b80-534b-11eb-9762-fc0be35a8614.png)
