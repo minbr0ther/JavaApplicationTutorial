@@ -1,4 +1,4 @@
-# AdvancedLottoSimulation (배열 자료구조를 벗어난 향상된 Ver.)
+# AdvancedLottoSimulation (TreeSet Ver.)
 
 ## 2021. 1. 10.
 
