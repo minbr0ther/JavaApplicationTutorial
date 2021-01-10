@@ -49,4 +49,4 @@
 
 ### **>> Class diagram**
 
-![image-20210110134626645](https://user-images.githubusercontent.com/24728385/104114816-f3086b80-534b-11eb-9762-fc0be35a8614.png)
+![LottoController](https://user-images.githubusercontent.com/24728385/104128643-3b577600-53ac-11eb-8d9d-baf93e3c7dcc.png)
