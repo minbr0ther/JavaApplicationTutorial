@@ -43,8 +43,7 @@
 
 ### **>> 실행화면 **
 
-![image-20210110133109608](https://user-images.githubusercontent.com/24728385/104114804-d9672400-534b-11eb-9fe7-0a812a201704.png){: width="100%" height="100%"}
-
+![image-20210110133109608](https://user-images.githubusercontent.com/24728385/104114804-d9672400-534b-11eb-9fe7-0a812a201704.png)
 <img width="427" alt="image-20210110133255724" src="https://user-images.githubusercontent.com/24728385/104114810-e7b54000-534b-11eb-8b7f-0fd79c3cfe4b.png">
 
 ### **>> Class diagram**
