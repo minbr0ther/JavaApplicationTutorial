@@ -1,5 +1,53 @@
 # Today I Learned  
 
+## 10/01/2021
+
+### 1. Coupling(결합도) and Cohesion(응집도)
+
+* **Coupling:** Coupling is the measure of the degree of interdependence between the modules. A good software will have low coupling.
+* **Cohesion:** Cohesion is a measure of the degree to which the elements of the module are functionally related. It is the degree to which all elements directed towards performing a single task are contained in the component. Basically, cohesion is the internal glue that keeps the module together. A good software design will have high cohesion.
+* High cohesion loose coupling => BEST!
+
+### 2. What is Javadoc? /** */
+
+* The parameters of the method (`@param`)
+* What the method returns (`@return`)
+* Any exceptions the method may throw (`@throws`)
+* Other less-common tags such as `@see` (a "see also" tag)
+
+### 3. for-each loop (The enhanced `for` statement)
+
+* **Syntax:**
+
+```java
+for (type var : array) 
+{ 
+    statements using var;
+}
+```
+
+* **is equivalent to:**
+
+```java
+for (int i=0; i<arr.length; i++) 
+{ 
+    type var = arr[i];
+    statements using var;
+}
+```
+
+### 4. Java 8 -> Java 10+
+
+You can change code like below.
+
+* Before : `List<String> list = new ArrayList<>();`
+
+* After : `var list = new ArrayList<String>();`
+
+
+
+
+
 ## 09/01/2021
 
 ### 1. Abstract vs Interface
@@ -18,15 +66,11 @@
 
 ### 2. Try-with-resource
 
-![image-20210109021520109](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210109021520109.png)
+![image-20210109021520109](https://user-images.githubusercontent.com/24728385/104120417-0f230180-537a-11eb-9c75-e57cc8f599ba.png)
 
 Before code																		After code
 
 * Advantages : makes the code concise, short, clear
-
-### 
-
-
 
 ## 08/01/2021
 
