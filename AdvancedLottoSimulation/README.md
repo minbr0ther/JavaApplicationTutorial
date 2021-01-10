@@ -41,7 +41,7 @@
   * `Set<Integer> basicNumbers` : TreeSet의 장점인 ''번호 중복 자동삭제''와 ''오름차순 정렬''로 번호를 삽입한다.
   * `private int bonusNumber` : 랜덤으로 숫자를 생성해서 `basicNumbers` 과 중복 없는 숫자를 저장 한다.
 
-### **>> 실행화면 **
+### **>> 실행화면**
 
 ![image-20210110133109608](https://user-images.githubusercontent.com/24728385/104114804-d9672400-534b-11eb-9fe7-0a812a201704.png)
 <img width="427" alt="image-20210110133255724" src="https://user-images.githubusercontent.com/24728385/104114810-e7b54000-534b-11eb-8b7f-0fd79c3cfe4b.png">
