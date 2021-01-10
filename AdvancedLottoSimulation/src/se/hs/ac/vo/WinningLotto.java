@@ -1,5 +1,6 @@
 package se.hs.ac.vo;
 
+import java.util.Arrays;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -11,7 +12,7 @@ public class WinningLotto {
     public WinningLotto(boolean randomOrExample) {
         basicNumbers = new TreeSet<Integer>();
         setBasicNumbers(randomOrExample);
-        setBonusNumber();
+        setBonusNumber(randomOrExample);
     }
 
     public Set<Integer> getBasicNumbers() {
@@ -19,20 +20,15 @@ public class WinningLotto {
     }
 
     public void setBasicNumbers(boolean randomOrExample) {
-        //public void setBasicNumbers(BasicNumbers basicnumbers);
         //true: Random case, false: example case
         if(randomOrExample) {
             for (int i = 0; basicNumbers.size() < 6; i++) {
-                int exampleNum = (int) (Math.random() * 42) + 1;
-                basicNumbers.add(exampleNum);
+                basicNumbers.add((int) (Math.random() * 42) + 1);
             }
         }
         else {
             basicNumbers.clear();
-            basicNumbers = new TreeSet<>();
-            for(int i=1;i<7; i++){
-                basicNumbers.add(i);
-            }
+            basicNumbers = new TreeSet<>(Arrays.asList(1,2,5,7,9,10));
         }
     }
 
@@ -41,20 +37,17 @@ public class WinningLotto {
         return bonusNumber;
     }
 
-    public void setBonusNumber() {
-        int exampleNum = 0;
-        do {
-           exampleNum = (int) (Math.random() * 42) + 1;
-        }while(basicNumbers.contains(exampleNum));
-        //베이직 넘버에 새로만든 로또번호가 포함되어 있으면 번호 다시생성, 없으면 번호 반환
-        bonusNumber = exampleNum;
-    }
-
-    @Override
-    public String toString() {
-        return "WinningLotto{" +
-                "basicNumbers=" + basicNumbers +
-                ", bonusNumber=" + bonusNumber +
-                '}';
+    public void setBonusNumber(boolean randomOrExample) {
+        int tmp = 0;
+        if(randomOrExample) {
+            do {
+                tmp = (int) (Math.random() * 42) + 1;
+            } while (basicNumbers.contains(tmp));
+            //베이직 넘버에 새로만든 로또번호가 포함되어 있으면 번호 다시생성, 없으면 번호 반환
+            bonusNumber = tmp;
+        }
+        else {
+            bonusNumber = 3;
+        }
     }
 }

@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 public class LottoController {
 
     private final LottoView lottoView;
-    private LottoGame lottoGame;
+    private final LottoGame lottoGame;
 
     public LottoController() {
         this.lottoView = new LottoView();
@@ -19,14 +19,15 @@ public class LottoController {
 
     public void run() {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-//            while (true) {
-                //lottoView.showQuestion();
-                //int num = Integer.parseInt(br.readLine());
 
-                lottoGame.showWinningLotto();
-//            }
+            lottoView.showQuestion();
+            int num = Integer.parseInt(br.readLine());
+            lottoGame.generateExampleLotto(num);
+            lottoGame.generateWinningLotto();
+            lottoGame.generateWinningList();
+
         } catch (IOException e) {
-            e.printStackTrace();
+            lottoView.showError();
         }
     }
 }
