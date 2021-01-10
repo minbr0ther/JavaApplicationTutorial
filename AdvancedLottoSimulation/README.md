@@ -30,7 +30,7 @@
 
 ### **>> 초기 모델 설계**
 
- ![image-20210110130248316](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110130248316.png)
+ ![image-20210110130248316](/Users/jeongminhyeong/GitHub/img files/image-20210110130248316.png)
 
 * ExampleLotto(시뮬레이션 될 예시 번호)는 큰 틀이 ArrayList이다
   * `id` :초기 설계 때 없었는데, ArrayList내부의 Object의 index를 구하는 방법을 찾지못해 부여하게 됐다.
@@ -45,10 +45,10 @@
 
 ### **>> 실행화면 **
 
-![image-20210110133109608](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110133109608.png){: width="100%" height="100%"}
+![image-20210110133109608](/Users/jeongminhyeong/GitHub/img files/image-20210110133109608.png){: width="100%" height="100%"}
 
-<img src="/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110133255724.png" alt="image-20210110133255724" style="zoom:50%;" />
+<img src="/Users/jeongminhyeong/GitHub/img files/image-20210110133255724.png" alt="image-20210110133255724" style="zoom:50%;" />
 
 ### **>> Class diagram**
 
-![image-20210110134626645](/Users/jeongminhyeong/Library/Application Support/typora-user-images/image-20210110134626645.png)
+![image-20210110134626645](/Users/jeongminhyeong/GitHub/img files/image-20210110134626645.png)
